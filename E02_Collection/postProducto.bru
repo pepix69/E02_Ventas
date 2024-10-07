@@ -1,0 +1,19 @@
+meta {
+  name: postProducto
+  type: http
+  seq: 23
+}
+
+post {
+  url: http://localhost:8080/api/v1/productos
+  body: json
+  auth: none
+}
+
+body:json {
+  "Mazda"
+}
+
+body:multipart-form {
+  1: hola
+}

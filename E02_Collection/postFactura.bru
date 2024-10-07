@@ -1,0 +1,23 @@
+meta {
+  name: postFactura
+  type: http
+  seq: 22
+}
+
+post {
+  url: http://localhost:8080/api/v1/clientes/1/facturas
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "Carro": "Mazda",
+    "Precio": 500000
+  }
+  
+}
+
+body:multipart-form {
+  1: hola
+}
